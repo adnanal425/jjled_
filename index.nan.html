@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Video Tron & LED - Profesional Solusi Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://junaedialwi.com/wp-content/uploads/2019/12/jenis-jenis-videotron.jpg') no-repeat center center;
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 60vh;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            max-width: 100vw;
+        }
+        
+        .running-text {
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 25s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .led-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .led-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: ledLight 2s infinite;
+        }
+        
+        @keyframes ledLight {
+            100% {
+                left: 100%;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .contact-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-500 to-blue-800">
+    <!-- Navigation -->
+    <nav class="bg-blue-500 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIBLNxMIMDP_2rbrf4FWvzafCuaISTilJtg&s" alt="Pro LED Logo" class="w-24 h-24 rounded-full object-cover border-blue-500" width=150px; height= auto;">
+                        <div>
+                            <h1 class="text-2xl font-bold text-blue-900">LED<span class="text-blue-900"> </span class="text-blue-900">SCREEN</h1>
+                            <p class="text-xs text-blue-900 -mt-1">Innovative Digital Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="flex flex-wrap gap-4 px-6">
+                        <a href="https://wa.me/6285858882257" class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-medium transition duration-300 flex items-center gap-2">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://instagram.com/@jjled_production" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-3 rounded-lg font-medium transition duration-300 flex items-center gap-2">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://tiktok.com/@yourusername" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-3 rounded-lg font-medium transition duration-300 flex items-center gap-2">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                        <a href="https://shopee.co.id/Bro_led" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg font-medium transition duration-300 flex items-center gap-2">
+                            <i class="fas fa-store"></i> Shopee
+                        </a>
+                    </div>
+                    <a href="#home" class="text-gray-800 hover:text-blue-600 font-medium">Beranda</a>
+                    <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Layanan</a>
+                    <a href="#products" class="text-gray-800 hover:text-blue-600 font-medium">Product Catalog</a>
+                    <a href="#description" class="text-gray-800 hover:text-blue-600 font-medium">Deskripsi Produk</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-600 font-medium">Tentang</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Beranda</a>
+                <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Layanan</a>
+                <a href="#products" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Product Catalog</a>
+                <a href="#description" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Deskripsi Produk</a>
+                <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Tentang</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Running Text -->
+    <div class="bg-gradient-to-r from-blue-600 to-blue-800 py-3 overflow-hidden">
+        <div class="marquee-container w-full">
+            <div class="marquee-content flex space-x-16">
+                <span class="font-medium text-white whitespace-nowrap">🔥 DISKON 20% Running Text | ✨ Video Tron HD 4K | 💡 LED Professional | 📞 0815-2978-8693</span>
+                <span class="font-medium text-white whitespace-nowrap">🔥 DISKON 20% Running Text | ✨ Video Tron HD 4K | 💡 LED Professional | 📞 0815-2978-8693</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center text-white relative overflow-hidden pt-16">
+        <div class="hero-overlay absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 md:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Solusi Digital <span class="led-effect">LED & Video Tron</span> Profesional</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in opacity-0" style="animation-delay: 0.3s">Memberikan solusi lengkap untuk kebutuhan digital signage, running text, dan pencahayaan LED dengan kualitas terbaik.</p>
+            <div class="flex flex-wrap justify-center gap-6 animate-fade-in opacity-0" style="animation-delay: 0.6s">
+                <a href="https://wa.me/6285858882257" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fas fa-phone-alt"></i> Hubungi via WhatsApp
+                </a>
+                <a href="#products" class="bg-white hover:bg-gray-100 text-blue-800 px-8 py-4 rounded-full font-semibold transition duration-300 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fas fa-box-open"></i> Lihat Produk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Layanan Kami</h2>
+                <p class="text-gray-900 max-w-2xl mx-auto">Berbagai solusi digital untuk mempercantik dan mempromosikan bisnis Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="text-blue-600 mb-6 text-4xl">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Memelihara perangkat VideoTron agar tidak mengalami gangguan dan kerusakan dengan cara melakukan perawatan VideoTron yang dilakukan secara rutin dan teratur.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Cek hardware Dan Software berkala</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Update firmware sistem baru</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Penanganan cepat bila terjadi error atau dead pixel</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="text-blue-600 mb-6 text-4xl">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">service Sparepart</h3>
+                    <p class="text-gray-600 mb-4">Melakukan perbaikan pada Sparepart VideoTron seperti servive modul/Power suply .</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Service Modul: penggantian LED lamp,IC </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Service Powersuply: Perbaikan komponen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>DLL</span>
+                        </li>
+                    </ul>
+                </div>
+
+                            <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="text-blue-600 mb-6 text-4xl">
+                        <i class="fas fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Construction</h3>
+                    <p class="text-gray-600 mb-4">Memberikan hasil konstruksi dan rangka yang kuat,bersih dan kokoh sehingga VideoTron juga tahan lama.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Perencanaan dan pembuatan pondasi Kontruksi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Pemasangan rangka dan struktur penyangga</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Penyesuaian Desain Kontruksi sesuai kondisi lapangan</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="text-blue-600 mb-6 text-4xl">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Installation</h3>
+                    <p class="text-gray-600 mb-4">Pemasangan LED videoTron dilakukan oleh tenaga ahli yang Profesional sehingga aman dan memberi hasil pemasangan yang sempurna.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Survey lokasi & Desain penempatan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Instalasi struktur dan panel LED</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Setting sistem kontrol & Koneksi</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+         <!-- Products Section -->
+    <section id="products" class="py-20 bg-blue-500">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">PRODUCT CATALOG</h2>
+                <p class="text-blue-900 max-w-2xl mx-auto">LED SCREEN & RUNNING TEXT.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Products Item 1 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://brandled.ae/wp-content/uploads/2024/10/brandled-p1.8-scaled.jpg" alt="Instalasi video tron besar dengan tampilan konten promosi produk di pusat perbelanjaan modern" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">P1.86 Indoor</h3>
+                        <p class="text-gray-600 mb-4">P1.86 indoor layar led penuh warna dengan kepadatan piksel yang sangat tinggi sehingga yang cocok digunakan pada creative space,indoor stage,hall,tempat belajar mengajar,meeting from dan acara dalam indoor lainnya.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Video Tron</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://id.loscenled.com/uploads/202337991/indoor-p2-5-high-refresh-rate-led-display22842bd6-d9f5-448d-9a32-48fec7a4a17d.jpg" alt="Running teks LED panjang di sepanjang facade gedung perkantoran dengan warna biru dan efek animasi" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">p2.5 Indoor</h3>
+                        <p class="text-gray-600 mb-4">Videotron indoor P2.5 adalah layar LED besar yang dirancang untuk penggunaan dalam ruangan dengan jarak antar piksel 2.5mm. P2.5 menunjukkan kerapatan piksel yang tinggi, sehingga menghasilkan tampilan yang tajam dan jelas, cocok untuk jarak pandang dekat. Videotron jenis ini banyak digunakan di berbagai tempat seperti ruang rapat, ruang kantor, toko ritel, dan tempat ibadah. .</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Running Text</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://cpimg.tistatic.com/10112066/b/4/P4-Outdoor-LED-Display-Screen..jpg" alt="Dekorasi LED warna-warni untuk panggung acara pernikahan dengan efek pencahayaan yang dinamis" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">P4 Outdoor</h3>
+                        <p class="text-gray-600 mb-4">P.4 Outdoor layar LED penuh warna dengan kepadatan pixel tinggi yang dipergunakan di luar ruangan, cocok di tempat public area, periklanan,reklame digital, sistem informasi pemerintahan,sistem informasi transportasi publik bandara,stasiun MRT, pelabuhan, jalan raya, jalan tol.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">LED Dekorasi</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://m.indonesian.ledrentaldisplays.com/photo/pl20170269-6500nits_p5_outdoor_billboard_led_display_with_nationstar_smd1921_for_ads.jpg" alt="Instalasi video tron outdoor yang tahan cuaca di tempat parkir mall dengan tampilan iklan bergerak" class="w-full h-full object-cover" />
+                    </div>  
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">P5 Outdoor</h3>
+                        <p class="text-gray-600 mb-4">P5 outdoor adalah layar LED yang dirancang untuk penggunaan di luar ruangan dengan spesifikasi pixel pitch 5mm. Ini berarti jarak antar titik LED adalah 5mm, yang menentukan kualitas gambar dan jarak pandang yang optimal. Videotron P5 outdoor cocok untuk menampilkan berbagai jenis konten visual seperti video, gambar, dan teks, dan sangat populer untuk kebutuhan promosi dan informasi di ruang terbuka.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Video Tron</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://static.ticimax.cloud/53847/uploads/urunresimleri/buyuk/tn-of-4-pro-p4-outdoor-led-screen--e770-cb64.jpg" alt="Running teks LED melengkung di atas pintu masuk restoran dengan efek animasi menyesuaikan waktu" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">P8 Outdoor</h3>
+                        <p class="text-gray-600 mb-4"> P8 adalah jenis layar tampilan LED (Light Emitting Diode) yang dirancang untuk penggunaan di luar ruangan, dengan jarak antar piksel (pixel pitch) sebesar 8mm. Ini berarti titik-titik cahaya (LED) pada layar berjarak 8mm satu sama lain. Semakin kecil pixel pitch, semakin tinggi kerapatan piksel dan semakin tajam gambar yang dihasilkan. Videotron P8 outdoor cocok untuk berbagai aplikasi seperti iklan, display toko, stadion, dan tempat hiburan.</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Video Tron</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://www.hitiled.com/wp-content/uploads/2021/09/outdoor-advertising-display-1.jpg" alt="Pencahayaan LED untuk booth pameran dengan efek dinamik yang menarik perhatian pengunjung" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">P10 outdoor</h3>
+                        <p class="text-gray-600 mb-4">P.10 outdoor merupakan layar LED penuh warna dengan penggunaan di luar ruangan sehingga yang cocok digunakan pada public area, periklanan,reklame digital ,sistem informasi pemerintahan,sistem informasi transportasi publik.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Video Tron</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition duration-300">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Table Section -->
+    <section id="description" class="py-20 bg-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Deskripsi produk</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Daftar lengkap produk video tron, running text, dan LED dengan spesifikasi detail.</p>
+            </div>
+
+            <div class="overflow-x-auto bg-white rounded-lg shadow-md mb-12">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-4 font-semibold">images</th>
+                            <th class="p-4 font-semibold">Model number</th>
+                            <th class="p-4 font-semibold">Modul Size</th>
+                            <th class="p-4 font-semibold">Pixel Pitch</th>
+                            <th class="p-4 font-semibold">Pixel Density</th>
+                            <th class="p-4 font-semibold">Scan Mode</th>
+                            <th class="p-4 font-semibold">Brightness</th>
+                            <th class="p-4 font-semibold">Resresh Rate</th>
+                            <th class="p-4 font-semibold">Best Viewing Distance</th>
+                            <th class="p-4 font-semibold">Best Viewing Angle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-4">
+                                <img src="https://brandled.ae/wp-content/uploads/2024/10/brandled-p1.8-scaled.jpg" alt="Video Tron Indoor P3.91" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P1.86</td>
+                            <td class="p-4">320mm x 160 mm</td>
+                            <td class="p-4">1.86mm</td>
+                            <td class="p-4">288,906 dots/m2</td>
+                            <td class="p-4 font-semibold text-blue-600">1/43Scan</td>
+                            <td class="p-4 font-semibold text-blue-600"> >500 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >1.86 M</td>
+                            <td class="p-4 font-semibold text-blue-600">160  Horizontal 140  vertikal</td>
+                        </tr>
+                        <tr class="border-t bg-gray-50">
+                            <td class="p-4">
+                                <img src="https://id.loscenled.com/uploads/202337991/indoor-p2-5-high-refresh-rate-led-display22842bd6-d9f5-448d-9a32-48fec7a4a17d.jpg" alt="Running teks LED panjang di sepanjang facade gedung perkantoran dengan warna biru dan efek animasi" class="w-full h-full object-cover" alt="Video Tron Outdoor P5.95" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P2.5</td>
+                            <td class="p-4">320mm x 160mm</td>
+                            <td class="p-4">2,5mm</td>
+                            <td class="p-4">160,000 dots/m2</td>
+                            <td class="p-4 font-semibold text-blue-600">1/32 Scan</td>
+                            <td class="p-4 font-semibold text-blue-600"> >700-1200 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >2,5 M</td>
+                            <td class="p-4 font-semibold text-blue-600">140  Horizontal 140  Vertikal</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">
+                                <img src="https://cpimg.tistatic.com/10112066/b/4/P4-Outdoor-LED-Display-Screen..jpg" alt="Running Text Single Color 3mm" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P4</td>
+                            <td class="p-4">320mm x 160mm</td>
+                            <td class="p-4">4 mm</td>
+                            <td class="p-4">40 x 80 dots</td>
+                            <td class="p-4 font-semibold text-blue-600">10 Scan</td>
+                            <td class="p-4 font-semibold text-blue-600">5,500-6,000 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >4-40 M</td>
+                            <td class="p-4 font-semibold text-blue-600">120  Horizontal 120  Vertikal</td>
+                        </tr>
+                        <tr class="border-t bg-gray-50">
+                            <td class="p-4">
+                                <img src="https://m.indonesian.ledrentaldisplays.com/photo/pl20170269-6500nits_p5_outdoor_billboard_led_display_with_nationstar_smd1921_for_ads.jpg" alt="Running Text RGB 5mm" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P5</td>
+                            <td class="p-4">320mm x 160mm</td>
+                            <td class="p-4">5 mm</td>
+                            <td class="p-4">32 x 64 dots</td>
+                            <td class="p-4 font-semibold text-blue-600">10 Scan</td>
+                            <td class="p-4 font-semibold text-blue-600">5,500-7,700 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >5 M</td>
+                            <td class="p-4 font-semibold text-blue-600">140  Horizontal  140 Vertikal</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">
+                                <img src="https://static.ticimax.cloud/53847/uploads/urunresimleri/buyuk/tn-of-4-pro-p4-outdoor-led-screen--e770-cb64.jpg" alt="LED Strip Light 5050 RGB" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P8</td>
+                            <td class="p-4">320mm x 160mm</td>
+                            <td class="p-4">8 mm</td>
+                            <td class="p-4">20 x 40 dots</td>
+                            <td class="p-4 font-semibold text-blue-600">1/5 Scan</td>
+                            <td class="p-4 font-semibold text-blue-600">5,500-7,000 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >8 M</td>
+                            <td class="p-4 font-semibold text-blue-600"> >110  Horizontal  110 Vertikal</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">
+                                <img src="https://www.hitiled.com/wp-content/uploads/2021/09/outdoor-advertising-display-1.jpg" alt="LED Strip Light 5050 RGB" class="w-16 h-16 object-cover rounded">
+                            </td>
+                            <td class="p-4">P10</td>
+                            <td class="p-4">320mm x 160mm</td>
+                            <td class="p-4">10 mm</td>
+                            <td class="p-4">16 x 32 dots</td>
+                            <td class="p-4 font-semibold text-blue-600">1/4 Scan</td>
+                            <td class="p-4 font-semibold text-blue-600">5,500-7,000 cd/m2</td>
+                            <td class="p-4 font-semibold text-blue-600"> >3840 Hz</td>
+                            <td class="p-4 font-semibold text-blue-600"> >10 M</td>
+                            <td class="p-4 font-semibold text-blue-600"> >130  Horizontal  130 Vertikal</td>
+                        </tr>  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-blue-500">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden">
+                     <video width="100%" controls autoplay muted loop>
+                        <source src="tron1.mp4" type="video/mp4"> maaf , Browser anda tidak Mendukung Video.
+                     </video>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">TENTANG JJ LED</h2>
+                    <p class="text-gray-600 mb-6">Kami adalah UMKM lokal yang berkomitmen untuk menyediakan solusi digital signage dan pencahayaan LED terbaik bagi usaha kecil dan menengah di Indonesia.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 text-xl mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Pengalaman Lebih dari 5 Tahun</h4>
+                                <p class="text-gray-600">Telah melayani ratusan klien dengan berbagai kebutuhan digital signage.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 text-xl mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Garansi Produk & Layanan</h4>
+                                <p class="text-gray-600">Memberikan garansi produk hingga 3 tahun dan layanan purna jual yang responsif.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 text-xl mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Harga Kompetitif</h4>
+                                <p class="text-gray-600">Menawarkan harga terbaik tanpa mengorbankan kualitas produk dan layanan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 text-center rounded-lg">
+                            <p class="text-3xl font-bold text-blue-800">100+</p>
+                            <p class="text-gray-600">Klien</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 text-center rounded-lg">
+                            <p class="text-3xl font-bold text-blue-800">200+</p>
+                            <p class="text-gray-600">Proyek</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 text-center rounded-lg">
+                            <p class="text-3xl font-bold text-blue-800">98%</p>
+                            <p class="text-gray-600">Kepuasan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari berbagai klien yang telah menggunakan layanan kami.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <img src="https://images.genpi.co/resize/320x240-100/uploads/data/images/2020/01/chef%20holycow.webp" alt="Foto profil pria dewasa pemilik restoran dengan senyum ramah" class="w-12 h-12 rounded-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ketut udayana</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Restoran Sederhana</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Running text yang dipasang di restoran saya sangat membantu mempromosikan menu spesial. Pelanggan sering kali tertarik dengan promosi yang berjalan di LED board."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <img src="https://i.pinimg.com/474x/a0/69/0b/a0690ba175d353400adfb07c27b2621f.jpg" alt="Foto wanita profesional manajer marketing dengan ekspresi percaya diri" class="w-12 h-12 rounded-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Lilis Gorden</h4>
+                            <p class="text-gray-600 text-sm">Bos Garment Taylor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Sejak Saya pakai video Tron dari sini,toko saya jadi lebih Di kenal,banyak yang mampir karena lihat promo di layar."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <img src="https://www.shutterstock.com/image-vector/wedding-event-organizer-logo-02-260nw-485792416.jpg" alt="Foto pria paruh baya pengusaha event dengan gaya formal" class="w-12 h-12 rounded-full object-cover" />
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Hendra Kurniawan</h4>
+                            <p class="text-gray-600 text-sm">EO Wedding Organizer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Dekorasi LED untuk pesta pernikahan yang mereka kerjakan sangat memukau! Efek pencahayaan yang dinamis membuat acara menjadi lebih spesial."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami siap membantu kebutuhan digital signage dan pencahayaan LED Anda.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-md border border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Kirim Pesan</h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Pilih Layanan</option>
+                                    <option value="video_tron">Video Tron</option>
+                                    <option value="running_text">Running Text</option>
+                                    <option value="led_lighting">Pencahayaan LED</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition duration-300">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-md border border-gray-200 h-full">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Info Kontak</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 text-2xl contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Alamat Kantor</h4>
+                                    <p class="text-gray-600">Jl. Pengubengan Kauh No. 46, Kab. Badung, Kec. kuta utara, Bali, Indonesia 80361</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 text-2xl contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                    <p class="text-gray-600">jjledbaligmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 text-2xl contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telepon</h4>
+                                    <p class="text-gray-600">WhatsApp: 0858-5888-2257</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 text-2xl contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Jam Operasional</h4>
+                                    <p class="text-gray-600">Senin - Sabtu: 08:30 - 17:00</p>
+                                    <p class="text-gray-600">Sabtu: Libur</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Lokasi Kami di Peta</h4>
+                            <div class="bg-gray-200 rounded-lg overflow-hidden h-48">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.337914095865!2d115.16948215050516!3d-8.659377054180812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2475b9448721b%3A0x859b84d3e608c20b!2sJl.%20Pengubengan%20Kauh%20Jl.%20Raya%20Kedampang%20No.46%2C%20Kerobokan%2C%20Kec.%20Kuta%20Utara%2C%20Kabupaten%20Badung%2C%20Bali%2080361!5e0!3m2!1sid!2sid!4v1753501587540!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" alt="Peta lokasi kantor UMKM VideoLED di Jl. Teknologi No. 123 dengan pin penanda berwarna merah" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">JJ LED</h3>
+                    <p class="text-gray-300 mb-4">Solusi profesional untuk kebutuhan digital signage dan pencahayaan LED.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/jjled_production" class="text-gray-300 hover:text-pink-500 transition duration-300 text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@yourusername" class="text-gray-300 hover:text-black transition duration-300 text-xl">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://shopee.co.id/Bro_led" class="text-gray-300 hover:text-orange-500 transition duration-300 text-xl">
+                            <i class="fas fa-store"></i>
+                        </a>
+                        <a href="https://wa.me/6285858882257" class="text-gray-300 hover:text-green-500 transition duration-300 text-xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Layanan Kami</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Video Tron HD</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Running Text LED</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Pencahayaan LED</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-blue-400 transition duration-300">Beranda</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition duration-300">Layanan</a></li>
+                        <li><a href="#portfolio" class="text-gray-300 hover:text-blue-400 transition duration-300">Portfolio</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300">Tentang Kami</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-300 mb-4">Dapatkan info promo dan tips menarik seputar digital signage.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Anda" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 mb-4 md:mb-0">© 2025 UMKM VideoLED. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="https://wa.me/6285858882257" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-24 right-8 z-50 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Format WhatsApp message
+            let whatsappMessage = `Halo, saya ${name}%0A`;
+            whatsappMessage += `Email: ${email}%0A`;
+            whatsappMessage += `No HP: ${phone}%0A`;
+            whatsappMessage += `Layanan: ${service}%0A%0A`;
+            whatsappMessage += `Pesan:%0A${message}`;
+            
+            // Redirect to WhatsApp
+            window.open(`https://wa.me/6285858882257/?text=${whatsappMessage}`, '_blank');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // LED effect for hero text
+        const ledText = document.querySelector('.led-effect');
+        
+        function toggleLEDEffect() {
+            ledText.classList.toggle('led-effect');
+            setTimeout(toggleLEDEffect, Math.random() * 3000 + 2000);
+        }
+        
+        setTimeout(toggleLEDEffect, 2000);
+    </script>
+</body>
+</html>
